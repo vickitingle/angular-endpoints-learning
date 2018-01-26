@@ -1,0 +1,19 @@
+<div ng-model="post">
+   <h2 class="title">{{ post.title }}</h2>
+  <div class="post-content post-{{post.id}}">
+    <div class="post-body">{{post.body}}</div>
+    <a href="/">Back</a><br/>
+    <p ng-click="toggleComments(post)" class="button">
+        <span ng-if="post.showComments">Hide Comments</span>
+        <span ng-if="!post.showComments">Show Comments</span>
+    </p>
+    <div class="post-comments" ng-if="post.showComments" class="comments hidden">
+      <div ng-repeat="comment in post.comments" class="comment">
+        <span>Name: {{comment.name}}</span>
+        <span>Email: {{comment.email}}</span>
+        <span>Comment: {{comment.body}}</span>
+      </div>
+    </div>
+    
+</div>
+

@@ -1,0 +1,41 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+span {
+    display: block;
+}
+
+.container {
+    width: 650px;
+    margin: 0 auto;
+    line-height: 1.4;
+    font-size: 1.8;
+}
+
+.comment {
+    padding: 10px;
+}
+
+.button {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 2px 15px;
+    border-radius: 20px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+@media all and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+    }
+}
